@@ -13,7 +13,7 @@ def exibir_menu():
 '''
     return input(textwrap.dedent(menu))
 
-def depositar(saldo, valor_deposito, extrato):
+def depositar(saldo, valor_deposito, extrato, /):
     if valor_deposito >= 0:
         saldo += valor_deposito
         #deposito_total += valor_deposito
